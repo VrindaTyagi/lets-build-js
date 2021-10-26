@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@mixin display($dir: row){
+    display: flex;
+    flex-direction: $dir;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    background-image: url("../images/bg-stars.svg");
+    background-color: rgb(36,36,52);
+    min-width: 100vh;
+    min-height: 100vh;
+    @include display($dir: column);
+}
+
+.header{
+    @include display();
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 20%;
+    p{
+        color: hsl(0, 0%, 100%);
+        text-transform: uppercase;
+        font-size: 16px;
+        font-family: Red Hat Text, sans-serif;
+        letter-spacing: 0.4em;
+    }
+}
+
+.timer{
+    @include display();
+    text-transform: uppercase;
+    color: hsl(237, 18%, 59%);
+    letter-spacing: 0.3em;
+    font-size: 12px;
+    font-family: Red Hat Text, sans-serif;
+    div{
+        border: 1px solid black;
+    }
+    // .box{
+    //     width: 100%;
+    //     height: 200px;
+    // }
+
+
+}
+
+.footer{
+    background-image: url("../images/pattern-hills.svg");
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    @include display();
+    a{
+        margin: 15px;
+    }
+    .icons{
+        margin-block-start: 50px;
+        a:hover{
+            path{
+                fill: hsl(345, 95%, 68%);
+            }
+        }
+    }
+
+}
