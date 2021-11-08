@@ -1,0 +1,132 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Red Hat Text', sans-serif;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blue-div {
+  background-image: url(../images/pattern-bg.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 35%;
+}
+
+.blue-div .heading {
+  color: white;
+  font-size: 1.8em;
+  height: 30%;
+  -webkit-margin-before: 20px;
+          margin-block-start: 20px;
+}
+
+.blue-div .search {
+  height: 70%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.blue-div .search .input-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 35%;
+  height: 30%;
+}
+
+.blue-div .search .input-box input {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: none;
+}
+
+.blue-div .search .input-box input[type="text"] {
+  padding-left: 20px;
+}
+
+.blue-div .search .input-box input:focus {
+  outline: none;
+}
+
+.blue-div .search .input-box button {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: none;
+  height: 100%;
+  width: 12%;
+  background-color: black;
+  color: white;
+  font-size: large;
+}
+
+.display {
+  border-radius: 10px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 25%;
+  width: 70%;
+  position: absolute;
+  top: 160px;
+  left: 190px;
+}
+
+.display div {
+  width: 25%;
+  color: #969696;
+  font-size: 0.6em;
+  -webkit-margin-start: 30px;
+          margin-inline-start: 30px;
+  border-right: 1px solid #969696;
+  height: 55%;
+}
+
+.display div p {
+  margin-top: 0;
+}
+
+.display div:nth-child(4) {
+  border: none;
+}
+
+.map {
+  height: 180px;
+}
+/*# sourceMappingURL=styles.css.map */
