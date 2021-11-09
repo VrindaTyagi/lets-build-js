@@ -20,7 +20,7 @@
 
    <div class="search">
 
-    <div class="input-box">
+    <div id="input-box">
       <input type="text" placeholder=" Search for any IP address or domain" id="input-value">
        <input type="button" value=">" onclick="fetchData(document.getElementById('input-value').value)" />
      </div>
@@ -32,19 +32,19 @@
   <div class="display">
     <div>
       <p class="ip">IP ADDRESS</p>
-      <p class="dyn-ip"></p>
+      <p id="dyn-ip" class="dyn-data"></p>
     </div>
     <div>
       <p class="loc">LOCATION</p>
-      <p class="dyn-loc"></p>
+      <p id="dyn-loc" class="dyn-data"></p>
     </div>
     <div>
       <p class="tzone">TIMEZONE</p>
-      <p class="dyn-tzone"></p>
+      <p id="dyn-tzone" class="dyn-data"></p>
     </div>
     <div>
       <p class="isp">ISP</p>
-      <p class="dyn-isp"></p>
+      <p id="dyn-isp" class="dyn-data"></p>
     </div>
   </div>
 

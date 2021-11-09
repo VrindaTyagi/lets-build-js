@@ -30,7 +30,7 @@ main {
     display: flex;
     justify-content: center;
 
-    .input-box {
+    #input-box {
       display: flex;
       width: 35%;
       height: 30%;
@@ -47,13 +47,17 @@ main {
       input:focus {
         outline: none;
       }
-      input[type="button"]{
+      input[type="button"] {
         border-radius: 0px 10px 10px 0px;
         height: 100%;
         width: 12%;
         background-color: black;
         color: white;
         font-size: large;
+
+      }
+      input[type="button"]:active {
+        background-color: hsl(0, 0%, 17%);
       }
     }
   }
@@ -83,6 +87,10 @@ main {
   }
   div:nth-child(4) {
     border: none;
+  }
+  .dyn-data{
+    color: hsl(0, 0%, 17%);
+    font-size: 2em;
   }
 }
 
