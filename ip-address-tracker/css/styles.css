@@ -5,7 +5,7 @@
 
 body {
   margin: 0;
-  font-family: 'Red Hat Text', sans-serif;
+  font-family: "Red Hat Text", sans-serif;
 }
 
 main {
@@ -81,10 +81,8 @@ main {
   outline: none;
 }
 
-.blue-div .search .input-box button {
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border: none;
+.blue-div .search .input-box input[type="button"] {
+  border-radius: 0px 10px 10px 0px;
   height: 100%;
   width: 12%;
   background-color: black;
@@ -101,11 +99,12 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 25%;
+  height: 20%;
   width: 70%;
   position: absolute;
   top: 160px;
   left: 190px;
+  z-index: 2;
 }
 
 .display div {
@@ -126,7 +125,8 @@ main {
   border: none;
 }
 
-.map {
-  height: 180px;
+#map {
+  height: 65%;
+  z-index: 1;
 }
 /*# sourceMappingURL=styles.css.map */

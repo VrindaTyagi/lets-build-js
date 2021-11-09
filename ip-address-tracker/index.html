@@ -7,12 +7,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-   crossorigin=""/>
-   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-   crossorigin=""></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
   <title>Frontend Mentor | IP Address Tracker</title>
 </head>
 <body>
@@ -24,9 +21,8 @@
    <div class="search">
 
     <div class="input-box">
-      <input type="text" placeholder=" Search for any IP address or domain">
-
-       <button> > </button>
+      <input type="text" placeholder=" Search for any IP address or domain" id="input-value">
+       <input type="button" value=">" onclick="fetchData(document.getElementById('input-value').value)" />
      </div>
 
    </div>
@@ -52,9 +48,10 @@
     </div>
   </div>
 
-  <div class="map"></div>
+  <div id="map"></div>
 
 </main>
+
 <script src="script.js"></script>
 </body>
 </html>
